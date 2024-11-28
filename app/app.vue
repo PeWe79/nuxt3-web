@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen flex-col overflow-hidden bg-white font-inter dark:bg-zinc-900">
+  <div class="font-inter flex min-h-screen flex-col overflow-hidden bg-white dark:bg-zinc-900">
     <!-- Site header -->
     <Header />
 
@@ -8,7 +8,7 @@
       <NuxtPage />
     </main>
     <!-- Site footer -->
-    <BuyMeCoffee />
+    <!-- <BuyMeCoffee /> -->
     <Footer />
   </div>
 </template>
