@@ -55,5 +55,7 @@
 </template>
 
 <script setup>
+import { Dialog, DialogPanel } from '@headlessui/vue'
+
 const mobileMenuOpen = ref(false)
 </script>
