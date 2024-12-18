@@ -5,6 +5,7 @@
         <img src="/nuxt-logo.svg" alt="logo" class="h-10 w-10" />
         <span class="ml-3 text-xl">Nuxt Web</span>
       </NuxtLink>
+
       <!-- Mobile nav -->
       <div class="flex md:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5" @click="mobileMenuOpen = true">
@@ -22,6 +23,10 @@
                 <Icon name="heroicons:x-mark" class="h-7 w-7" />
               </button>
             </div>
+            <div class="flex justify-end space-x-3 py-6">
+              <!-- <ToggleColorMode /> -->
+              <ColorModeButton />
+            </div>
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-zinc-500/10">
                 <div class="space-y-2 py-6">
@@ -31,14 +36,12 @@
                   <NuxtLink to="/contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-zinc-800 hover:dark:text-zinc-50">Contact</NuxtLink>
                   <NuxtLink to="/blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-zinc-800 hover:dark:text-zinc-50">Blog</NuxtLink>
                 </div>
-                <div class="flex justify-end space-x-3 py-6">
-                  <ToggleColorMode />
-                </div>
               </div>
             </div>
           </DialogPanel>
         </Dialog>
       </ClientOnly>
+
       <!-- Desktop nav -->
       <nav class="hidden flex-wrap items-center justify-center text-base md:ml-4 md:mr-auto md:flex md:border-l md:border-gray-400 md:py-1 md:pl-4">
         <NuxtLink to="/" class="mr-5 hover:text-zinc-800 hover:dark:text-zinc-50">Home</NuxtLink>
@@ -48,7 +51,7 @@
         <NuxtLink to="/blog" class="mr-5 hover:text-zinc-800 hover:dark:text-zinc-50">Blog</NuxtLink>
       </nav>
       <div class="hidden flex-wrap md:flex">
-        <ToggleColorMode />
+        <ColorModeButton />
       </div>
     </div>
   </header>
