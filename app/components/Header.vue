@@ -24,7 +24,6 @@
               </button>
             </div>
             <div class="flex justify-end space-x-3 py-6">
-              <!-- <ToggleColorMode /> -->
               <ColorModeButton />
             </div>
             <div class="mt-6 flow-root">
